@@ -1,0 +1,7 @@
+{
+  "name": "waterminder",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
