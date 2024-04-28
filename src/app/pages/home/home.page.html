@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true" >
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Waterminder
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <ion-item lines="none">
+      <ion-input label="Nombre:" [(ngModel)]="formulario.nombre" placeholder="Ingresa nombre"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="contenido">
+      <ion-label>
+        Avatar:
+      </ion-label>
+      <div class="tamanio-completo">
+        <ion-radio-group [(ngModel)]="formulario.avatar">
+          <ion-radio value="1">Opcion 1</ion-radio><br />
+          <ion-radio value="2">Opcion 2</ion-radio><br />
+        </ion-radio-group>
+        <img [src]="'assets/img/avatar-' + formulario.avatar + '.png'" onerror="this.src='assets/img/cual.png'">
+      </div>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-button expand="block" (click)="guardarConfiguracion()" size="large" class="tamanio-completo">Guardar</ion-button>
+    </ion-item>    
+  </ion-list>
+ 
+</ion-content>

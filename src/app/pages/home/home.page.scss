@@ -1,0 +1,12 @@
+.contenido {
+    align-items: flex-start;
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.tamanio-completo {
+    width: 100%;
+}
